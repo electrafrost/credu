@@ -689,7 +689,7 @@ img { max-width: 100%; display: block; }
 
 .blockchain-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
 
@@ -1044,18 +1044,73 @@ img { max-width: 100%; display: block; }
 
 /* ========== RESPONSIVE ========== */
 @media (max-width: 900px) {
-  .nav-links, .nav-cta { display: none; }
+  .nav-links { 
+    display: none; 
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: rgba(15, 17, 39, 0.97);
+    backdrop-filter: blur(20px);
+    flex-direction: column;
+    padding: 1rem 2rem 1.5rem;
+    border-bottom: 1px solid rgba(232,120,48,0.15);
+  }
+  .nav-links.show { display: flex; }
+  .nav-links a { padding: 0.75rem 0; font-size: 0.85rem; }
+  .nav-cta { display: none; }
   .mobile-toggle { display: block; }
   .about-content { grid-template-columns: 1fr; gap: 2rem; }
   .about-profile { flex-direction: row; gap: 1.5rem; }
   .profile-name-block { text-align: left; }
+  .profile-photo-wrap { width: 120px; height: 120px; }
   .contact-grid { grid-template-columns: 1fr; }
   .hero h1 { font-size: 2rem; }
+  .blockchain-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 600px) {
+  html, body { overflow-x: hidden; }
   .hero-actions { flex-direction: column; align-items: center; }
-  .section, .section-full { padding: 4rem 1.25rem; }
+  .hero-explainer { font-size: 0.75rem; }
+  .section, .section-full { padding: 3.5rem 1rem; }
+  .section-title { font-size: 1.5rem; }
+  .hero-mascot { width: 100px; height: 100px; }
+  .contact-mascot { width: 120px; height: 120px; }
+  .section-mascot { width: 90px; height: 90px; }
+  .about-profile { flex-direction: column; align-items: center; }
+  .profile-name-block { text-align: center; }
+
+  /* Accordion cards on mobile */
+  .accordion-mobile .accordion-trigger {
+    cursor: pointer;
+    position: relative;
+    padding-right: 2rem;
+  }
+  .accordion-mobile .accordion-trigger::after {
+    content: '+';
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--orange);
+    transition: transform 0.3s ease;
+  }
+  .accordion-mobile .accordion-trigger.open::after {
+    content: '−';
+  }
+  .accordion-mobile .accordion-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+    padding-top: 0;
+  }
+  .accordion-mobile .accordion-body.open {
+    max-height: 500px;
+    padding-top: 0.75rem;
+  }
+
   .problems-grid, .solution-grid, .why-grid, .ux-grid, .blockchain-grid {
     grid-template-columns: 1fr;
   }
@@ -1272,7 +1327,7 @@ img { max-width: 100%; display: block; }
     <div class="blockchain-header reveal">
       <span class="section-label">Open-Source Foundations</span>
       <h2 class="section-title">Why Public Blockchain?</h2>
-      <p style="font-size:1.05rem;color:rgba(15,17,39,0.7);max-width:700px;margin-top:0.5rem;">The Importance of Open-Source Foundations for a Profession-Owned Accounting Industry Project</p>
+      <p style="font-size:1.05rem;color:rgba(15,17,39,0.7);max-width:700px;margin-top:0.5rem;">The Importance of Open-Source Foundations for a Truly Global Profession in the Accounting Industry</p>
     </div>
     <div class="blockchain-grid">
       <div class="blockchain-card reveal">
@@ -1307,6 +1362,10 @@ img { max-width: 100%; display: block; }
         <h3>Sustainability</h3>
         <p>Not reliant on a single group or the cooperation of professional bodies; community driven for long-term relevance.</p>
       </div>
+      <div class="blockchain-card reveal">
+        <h3>Agentic Procurement</h3>
+        <p>For AI agents to verify credentials cryptographically, search autonomously for trusted expertise, and pay for it in crypto.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -1337,7 +1396,7 @@ img { max-width: 100%; display: block; }
   <div class="about-highlight reveal" style="margin-top: 2rem;">
     <h3>Building the Team</h3>
     <p>Electra is currently assembling a transdisciplinary team of educators, advisers and builders from emerging tech, finance and accounting fields to guide the project.</p>
-    <p>CREDU is being built at Network School — a startup society and campus model fostering innovation at the intersection of technology and education.</p>
+    <p>The CREDU platform is being developed through <strong><a href="https://credu.academy/" target="_blank" rel="noopener noreferrer">CREDU Academy</a></strong>, a rolling cohort programme hosted as a Network School residency in Malaysia/Singapore — building the platform and its community from the ground up with each intake of practitioners.</p>
   </div>
 </section>
 
@@ -1390,6 +1449,13 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 reveals.forEach(el => observer.observe(el));
 
+// Mobile nav - close menu when a link is tapped
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.querySelector('.nav-links').classList.remove('show');
+  });
+});
+
 // Active nav + back to top
 const sections = document.querySelectorAll('section[id]');
 const backToTop = document.getElementById('backToTop');
@@ -1408,6 +1474,50 @@ window.addEventListener('scroll', () => {
   if (window.scrollY > 400) backToTop.classList.add('visible');
   else backToTop.classList.remove('visible');
 });
+
+// Mobile accordion for cards
+function setupMobileAccordions() {
+  const isMobile = window.innerWidth <= 600;
+  const cardSelectors = '.problem-card, .solution-card, .blockchain-card, .ux-card, .why-card';
+  
+  document.querySelectorAll(cardSelectors).forEach(card => {
+    const heading = card.querySelector('h3');
+    const body = card.querySelector('p');
+    if (!heading || !body) return;
+
+    if (isMobile) {
+      card.classList.add('accordion-mobile');
+      heading.classList.add('accordion-trigger');
+      body.classList.add('accordion-body');
+      
+      // Remove old listeners by cloning
+      const newHeading = heading.cloneNode(true);
+      heading.parentNode.replaceChild(newHeading, heading);
+      
+      newHeading.addEventListener('click', () => {
+        const wasOpen = newHeading.classList.contains('open');
+        // Close all others in same grid
+        const grid = card.parentElement;
+        grid.querySelectorAll('.accordion-trigger').forEach(t => t.classList.remove('open'));
+        grid.querySelectorAll('.accordion-body').forEach(b => b.classList.remove('open'));
+        // Toggle this one
+        if (!wasOpen) {
+          newHeading.classList.add('open');
+          card.querySelector('.accordion-body').classList.add('open');
+        }
+      });
+    } else {
+      card.classList.remove('accordion-mobile');
+      heading.classList.remove('accordion-trigger', 'open');
+      body.classList.remove('accordion-body', 'open');
+      body.style.maxHeight = '';
+      body.style.paddingTop = '';
+    }
+  });
+}
+
+setupMobileAccordions();
+window.addEventListener('resize', setupMobileAccordions);
 </script>
 </body>
 </html>
