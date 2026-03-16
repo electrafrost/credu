@@ -930,6 +930,69 @@ img { max-width: 100%; display: block; }
 
 .social-link:hover { border-color: var(--orange); background: rgba(232,120,48,0.1); transform: translateY(-2px); }
 
+/* ========== ACADEMY ========== */
+.academy-bg {
+  background: linear-gradient(165deg, var(--orange-light) 0%, var(--orange) 100%);
+}
+
+.academy-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.academy-lead {
+  font-size: 1.05rem;
+  color: rgba(15,17,39,0.7);
+  max-width: 650px;
+  margin: 0.5rem auto 3rem;
+  line-height: 1.7;
+}
+
+.academy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.academy-feature {
+  background: rgba(15,17,39,0.1);
+  border: 1px solid rgba(15,17,39,0.08);
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  text-align: left;
+}
+
+.academy-icon {
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.academy-feature h3 {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--navy);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.5rem;
+}
+
+.academy-feature p {
+  font-size: 0.9rem;
+  color: rgba(15,17,39,0.65);
+  line-height: 1.6;
+}
+
+.academy-cta { margin-top: 1rem; }
+
+@media (max-width: 600px) {
+  .academy-grid { grid-template-columns: 1fr; }
+}
+
 /* ========== BACK TO TOP ========== */
 .back-to-top {
   position: fixed;
@@ -1132,6 +1195,7 @@ img { max-width: 100%; display: block; }
       <li><a href="#roadmap">Roadmap</a></li>
       <li><a href="#blockchain">Blockchain</a></li>
       <li><a href="#about">About</a></li>
+      <li><a href="#academy">Academy</a></li>
     </ul>
     <a href="#contact" class="nav-cta">Join Credu</a>
     <button class="mobile-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('show')">
@@ -1397,6 +1461,37 @@ img { max-width: 100%; display: block; }
     <h3>Building the Team</h3>
     <p>Electra is currently assembling a transdisciplinary team of educators, advisers and builders from emerging tech, finance and accounting fields to guide the project.</p>
     <p>The CREDU platform is being developed through <strong><a href="https://credu.academy/" target="_blank" rel="noopener noreferrer">CREDU Academy</a></strong>, a rolling cohort programme hosted as a Network School residency in Malaysia/Singapore — building the platform and its community from the ground up with each intake of practitioners.</p>
+  </div>
+</section>
+
+<!-- ========== CREDU ACADEMY ========== -->
+<section class="section-full academy-bg" id="academy">
+  <div class="academy-inner">
+    <div class="reveal">
+      <span class="section-label">CREDU Academy</span>
+      <h2 class="section-title" style="color: var(--navy);">Learn. Build. Deploy.</h2>
+      <p class="academy-lead">An accounting technologist and international tax programme at Network School, Malaysia/Singapore. Protected time to apply your expertise to advanced systems — AI, digital assets, blockchain, and cross-border practitioner networks.</p>
+    </div>
+    <div class="academy-grid reveal">
+      <div class="academy-feature">
+        <span class="academy-icon">🏫</span>
+        <h3>Network School Residency</h3>
+        <p>Serviced accommodation, meals, coworking and gym — daily logistics handled so you can focus on progress.</p>
+      </div>
+      <div class="academy-feature">
+        <span class="academy-icon">🔧</span>
+        <h3>Build Real Systems</h3>
+        <p>No spectators. Every participant builds something they can use, defend, and take forward into their practice.</p>
+      </div>
+      <div class="academy-feature">
+        <span class="academy-icon">🌏</span>
+        <h3>Rolling Cohorts</h3>
+        <p>Limited to 10 per cohort. Stay in your role remotely. First cohort starts June 2026.</p>
+      </div>
+    </div>
+    <div class="academy-cta reveal">
+      <a href="https://credu.academy/" target="_blank" rel="noopener noreferrer" class="btn-dark">Explore CREDU Academy &nearr;</a>
+    </div>
   </div>
 </section>
 
