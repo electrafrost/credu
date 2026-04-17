@@ -1,32 +1,49 @@
 # CREDU
 
-A verified credentialing and peer-to-peer, agent-to-agent marketplace for global public accountants' continuous professional education and development (CPE and CPD).
+A Verified Credentialing & P2P-A2A Marketplace for Accountants' CPE & CPD.
 
-Activating - Accountability. Advocacy. Trust.
+Accountability. Advocacy. Trust.
 
-## What it is
+P2P-A2A: Peer-to-Peer, Agent-to-Agent - where accountants and AI agents collaborate to learn, verify credentials, and transact.
 
-CREDU addresses a structural problem in the accounting profession: continuing professional education requirements are fragmented by jurisdiction, controlled by national bodies, and increasingly disconnected from what practitioners actually do. Many accountants struggle or neglect to maintain their requirements. Vendor-sponsored CPD creates dependency rather than capability.
+## Problems addressed
 
-CREDU replaces passive credentialing with verifiable professional output.
+- **Expenses and hassles:** CPE/CPD programs can be costly. Maintaining detailed records with certificates from different sources is tedious, with no automations.
+- **Specialization gap:** Content is often basic or generalist, lacking specialisation for diverse professional levels, niches or growth needs.
+- **Not being audited enough:** Verifying members' CPE/CPD hours is time-consuming and costly for professional bodies. Not feasible at scale or in real-time.
+- **Accountability incentive gap:** Consumers and regulators have no visibility into accountants' current educational achievements - a key to building trust and attracting clientele.
+- **AI outpacing credentialing:** AI is reshaping professional competence faster than credentialing bodies can respond.
 
-## Core problems addressed
+## Solution
 
-- CPD content is often outdated, irrelevant and not aligned to the accelerating pace of change in AI, digital assets and cross-border practice
-- Practitioners lack access to trusted, specialised peers across jurisdictions
-- Credential verification is manual, slow and not portable
-- AI is reshaping professional competence faster than credentialing bodies can respond
+Simplified open credentialing with incentives. CREDU simplifies CPE/CPD record keeping for accountants, at no cost to them, with verifiable and descriptive records on a transparent and easily auditable platform - which also unlocks new revenue streams.
 
-## How it works
+- **Simplified credential management:** Automatically issues CPD/CPE certificates to your public CREDU profile, updating logs of hours and competencies, aggregating all credentials for real-time compliance tracking.
+- **Accessible and free:** A globally accessible platform, free for professional accountants to simplify their CPE/CPD tracking and publicly promote their expertise.
+- **Audit efficiency:** Eliminates auditing time and costs for accounting bodies by automating CPE/CPD compliance monitoring and verification across the membership base.
+- **Transparent, monetised expertise:** Accountants and trainers co-create specialised CPD content, monetising expertise in a marketplace, while offering visibility to consumers seeking specialised knowledge.
+- **Agentic procurement:** AI agents verify credentials cryptographically, search autonomously for trusted expertise, and pay for it in crypto.
 
-- **Verified credentials:** On-chain records of professional development tied to demonstrated output
-- **Peer-to-peer marketplace:** Accountants find, verify and engage specialist expertise across jurisdictions
-- **Agent-to-agent layer:** AI agents acting on behalf of practitioners can verify credentials and transact within the network
-- **Open credentialing framework:** Profession-owned public good infrastructure, not controlled by any single professional body or vendor
+## Who it serves
+
+- **Accountants:** Effortless CPE/CPD tracking, profitably enhancing professional growth.
+- **Professional bodies:** Automated CPD audits across the entire membership, reduced costs, data gains.
+- **CPE training providers:** Gain reputation and market reach, increase revenue opportunities from content.
+- **The public:** Find expertise with verifiable, current credentials - more trustworthy than any website claims.
+
+## Open-source foundations
+
+CREDU is developed as a public good using open-source software, without proprietary systems, shareholders or equity investors. Users are rewarded based on their contributions. This ensures that value and decision-making are distributed among those who actively contribute to the platform's growth and success.
+
+Built on public blockchain for transparency, community ownership, independence from central control, and agentic procurement.
+
+## Credentialing framework
+
+Peer-to-peer micro-credentials are mapped to the IPA Global Competencies Framework (technical, professional, business), which underpins the Global Certificate of Public Accounting (GCPA). Contributions are open to members of IFAC-recognised professional bodies, such as the Institute of Public Accountants (IPA).
 
 ## Relationship to CREDU Academy
 
-CREDU Academy participants are the first contributors to the CREDU credentialing system. What they build during the residency becomes the first evidence in their verified professional profile.
+The CREDU platform is being developed through CREDU Academy, a rolling cohort programme hosted as a Network School residency in Malaysia/Singapore - building the platform and its community from the ground up with each intake of practitioners.
 
 - Academy: [credu.academy](https://credu.academy)
 - Platform: [credu.io](https://credu.io)
@@ -36,10 +53,8 @@ CREDU Academy participants are the first contributors to the CREDU credentialing
 Electra Frost, Chartered Tax Adviser (CTA), Fellow and Global Certified Public Accountant (FIPA GCPA)
 Deputy President, Member Advisory Committee, Institute of Public Accountants Malaysia
 
-CREDU is profession-owned public good infrastructure. Contributions are open to members of IFAC-recognised professional bodies, such as the Institute of Public Accountants (IPA).
-
-Peer-to-peer micro-credentials are mapped to the IPA Global Competencies Framework (technical, professional, business), which underpins the Global Certificate of Public Accounting (GCPA).
+CREDU, and its associated DAO (CREDAO), is a social innovation project under the auspice of Digital Playhouse Foundation Ltd, a purpose-built Australian charity and Public Benevolent Institution.
 
 ## Status
 
-Proof of concept in development. Early contributors onboarding through CREDU Academy from June 2026.
+Research, validation and proof of concept (2024-2026). MVP 1 build and test targeted Q3 2026. Early contributors onboarding through CREDU Academy from June 2026.
