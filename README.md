@@ -1,8 +1,8 @@
 # CREDU
 
-A verified credentialing and peer-to-peer, agent-to-agent marketplace for global public accountants' CPE and CPD.
+A verified credentialing and peer-to-peer, agent-to-agent marketplace for global public accountants' continuous professional education and development (CPE and CPD).
 
-Accountability. Advocacy. Trust.
+Activating - Accountability. Advocacy. Trust.
 
 ## What it is
 
