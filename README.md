@@ -57,7 +57,7 @@ The CREDU platform is being developed through CREDU Academy, a rolling cohort pr
 Electra Frost, Chartered Tax Adviser (CTA), Fellow and Global Certified Public Accountant (FIPA GCPA)
 Deputy President, Member Advisory Committee, Institute of Public Accountants Malaysia
 
-CREDU, and its associated DAO (CREDAO), is a social innovation project under the auspice of Digital Playhouse Foundation Ltd, a purpose-built Australian charity and Public Benevolent Institution.
+CREDU, and its associated DAO (CREDAO), is a social innovation project under the auspice of Digital Playhouse Foundation Ltd, a purpose-built Public Benevolent Institution.
 
 ## Status
 
