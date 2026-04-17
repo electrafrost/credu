@@ -1,8 +1,8 @@
 # CREDU
 
-A Verified Credentialing & P2P-A2A Marketplace for Accountants' CPE & CPD.
+A Verified Credentialing & Open Marketplace for Accountants' CPE & CPD.
 
-Activating - Accountability. Advocacy. Trust.
+Accountability. Advocacy. Trust.
 
 P2P-A2A: Peer-to-Peer, Agent-to-Agent - where accountants and AI agents collaborate to learn, verify credentials, and transact.
 
