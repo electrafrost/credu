@@ -2,7 +2,7 @@
 
 A Verified Credentialing & P2P-A2A Marketplace for Accountants' CPE & CPD.
 
-Accountability. Advocacy. Trust.
+Activating - Accountability. Advocacy. Trust.
 
 P2P-A2A: Peer-to-Peer, Agent-to-Agent - where accountants and AI agents collaborate to learn, verify credentials, and transact.
 
