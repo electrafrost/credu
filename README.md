@@ -8,20 +8,22 @@ P2P-A2A: Peer-to-Peer, Agent-to-Agent - where accountants and AI agents collabor
 
 ## Problems addressed
 
+- **Unverifiable expertise:** The public has no way to verify that an accountant has the current, specific skills they need before they pay for advice. Qualifications confirm entry to the profession, not what someone is good at right now.
+- **Unclaimed competitive advantage:** Accountants who invest in advanced, specialised training are not discoverable above those with the same letters after their name and better marketing. The effort to upskill does not translate into being found.
 - **Expenses and hassles:** CPE/CPD programs can be costly. Maintaining detailed records with certificates from different sources is tedious, with no automations.
-- **Specialization gap:** Content is often basic or generalist, lacking specialisation for diverse professional levels, niches or growth needs.
+- **Specialisation gap:** Content is often basic or generalist, lacking specialisation for diverse professional levels, niches or growth needs.
 - **Not being audited enough:** Verifying members' CPE/CPD hours is time-consuming and costly for professional bodies. Not feasible at scale or in real-time.
 - **Accountability incentive gap:** Consumers and regulators have no visibility into accountants' current educational achievements - a key to building trust and attracting clientele.
 - **AI outpacing credentialing:** AI is reshaping professional competence faster than credentialing bodies can respond.
 
 ## Solution
 
-Simplified open credentialing with incentives. CREDU simplifies CPE/CPD record keeping for accountants, at no cost to them, with verifiable and descriptive records on a transparent and easily auditable platform - which also unlocks new revenue streams.
+Simplified open credentialing with incentives. CREDU simplifies CPE/CPD record keeping for accountants, at no cost to them, with verifiable and descriptive records on a transparent and instantly auditable platform - which also unlocks new revenue streams.
 
-- **Simplified credential management:** Automatically issues CPD/CPE certificates to your public CREDU profile, updating logs of hours and competencies, aggregating all credentials for real-time compliance tracking.
-- **Accessible and free:** A globally accessible platform, free for professional accountants to simplify their CPE/CPD tracking and publicly promote their expertise.
-- **Audit efficiency:** Eliminates auditing time and costs for accounting bodies by automating CPE/CPD compliance monitoring and verification across the membership base.
-- **Transparent, monetised expertise:** Accountants and trainers co-create specialised CPD content, monetising expertise in a marketplace, while offering visibility to consumers seeking specialised knowledge.
+- **Simplified credential management:** Automatically issues CPD/CPE certificates to your public CREDU profile, updating logs of hours and competencies, aggregating all verified credentials for real-time CPD compliance tracking.
+- **Accessible and free:** A globally accessible platform, free for professional accountants to simplify their CPE/CPD tracking and publicly promote their current expertise.
+- **CPD audit efficiency:** Eliminates auditing time and costs for accounting bodies by automating CPE/CPD compliance monitoring and verification across the membership base.
+- **Transparent, monetised expertise:** Accountants and trainers co-create specialised CPD content, monetising expertise in a marketplace, while offering visibility to consumers seeking specialised knowledge and capability.
 - **Agentic procurement:** AI agents verify credentials cryptographically, search autonomously for trusted expertise, and pay for it in crypto.
 
 ## Who it serves
